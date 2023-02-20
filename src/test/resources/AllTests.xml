@@ -1,0 +1,28 @@
+<!-- continut fisier de pe: https://testng.org/doc/documentation-main.html#testng-xml -->
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="AllTests" verbose="1" >
+    <parameter name="user" value="tomsmith"></parameter>
+    <parameter name="pass" value="SuperSecretPassword!"></parameter>
+    <parameter name="successLogoutMessage" value="You logged out of the secure area!"></parameter>
+    <parameter name="mesajLogin" value="You logged into a secure area!"></parameter>
+
+    <test name="Login" >
+        <classes>
+            <class name="com.herokuapp.tests.LoginTests" />
+        </classes>
+    </test>
+
+    <test name="Logout">
+        <classes>
+            <class name="com.herokuapp.tests.LogoutTests"/>
+        </classes>
+    </test>
+
+    <test name="Checkbox">
+        <classes>
+            <class name="com.herokuapp.tests.CheckboxTests"/>
+        </classes>
+    </test>
+</suite>
