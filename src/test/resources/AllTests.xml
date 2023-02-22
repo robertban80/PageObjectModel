@@ -25,4 +25,11 @@
             <class name="com.herokuapp.tests.CheckboxTests"/>
         </classes>
     </test>
+
+    <test name="Dropdown">
+        <classes>
+            <class name="com.herokuapp.tests.DropdownTests"/>
+        </classes>
+    </test>
+
 </suite>
